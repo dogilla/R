@@ -1,9 +1,9 @@
 #Probabilidad 1
 #Integrantes:
 #--Guzman Mosco Mario Alexis
-#--
-#--
-#--
+#--Hernández Pozos Moisés
+#--Ramos Calpulalpan Karem
+#--Romero Pérez Minerva María
 
 #simula valores de la variable Hipergeometrica
 simulaHiperGeom <- function(eneg, ene, eme){
@@ -40,9 +40,10 @@ simulaGamma <- function(ene,lambda){
   x<-c()
   y<-runif(ene)
   for(i in 1:ene){
-    #funcion inversa de la funcion de distribucion gamma
+    #funcion inversa de la funcion de distribucion exponencial
     x[i]=-(1/lambda)*log(y[i])
   }
+  #la suma de exponenciales es gamma
   return(sum(x[1:ene]))
 }
 
