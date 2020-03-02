@@ -4,6 +4,7 @@
 #--Hernández Pozos Moisés
 #--Ramos Calpulalpan Karem
 #--Romero Pérez Minerva María
+#..
 
 #simula valores de la variable Hipergeometrica
 simulaHiperGeom <- function(eneg, ene, eme){
